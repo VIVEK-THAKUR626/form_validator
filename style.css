@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header,.footer{
+    height: 25vh;
+    display: flex;
+}
+h1{
+    align-self: flex-start;
+    margin-top: 0.75em;
+}
+h3{
+    align-self: flex-end;
+    margin-bottom: 1.5em;
+}
+.main{
+    height: 50vh;
+}
+a{
+    text-decoration: none;
+}
+form{
+    text-align: center;
+}
+#submit{
+    padding: 0.5em;
+}

@@ -8,26 +8,50 @@
     align-items: center;
 }
 .header,.footer{
-    height: 25vh;
+    height: 10vh;
     display: flex;
 }
 h1{
     align-self: flex-start;
     margin-top: 0.75em;
 }
+h2{
+    text-align: center;
+    
+}
 h3{
     align-self: flex-end;
     margin-bottom: 1.5em;
 }
 .main{
-    height: 50vh;
+    display: flex;
+    align-items: center;
+    height: 80vh;
 }
 a{
     text-decoration: none;
 }
 form{
+    border: 3px black solid;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+    justify-content: space-evenly;
+}
+label{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+input{
     text-align: center;
+}
+input:required{
+    border: 2px black solid;
 }
 #submit{
     padding: 0.5em;
+    width: 10em;
+    align-self: center;
 }

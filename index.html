@@ -12,39 +12,46 @@
         <main class="main">
             <form>
                 <h2>DETAILS</h2>
-                <br>
-                <label>NAME : </label>
-                <input id="name" type="text" required>
-                <br>
-                <br>
-                <label>EMAIL : </label>
-                <input id="email" type="email" required>
-                <br>
-                <br>
-                <label>PHONE :</label>
-                <input id="phone" type="number" required>
-                <br>
-                <br>
-                <label>AGE :</label>
-                <input id="age" type="number" required>
-                <br>
-                <br>
-                <label for="gender">GENDER :</label>
-                <input id="male" class="gender" type="radio" required>
-                <label>MALE</label>
-                <input id="female" class="gender" type="radio" required>
-                <label>FEMALE</label>
-                <br>
-                <br>
-                <label>ENTER PASSWORD : </label>
-                <input id="password" type="password" required>
-                <br>
-                <br>
-                <label>CONFIRM PASSWORD : </label>
-                <input id="confirmPassword" type="password" required>
-                <br>
-                <br>
-                <input id="submit" type="submit">
+
+                <div>
+                    <label for="userName">NAME : </label>
+                    <input id="userName" name="userName" type="text" required>
+                </div>
+
+                <div>
+                    <label for="email">EMAIL : </label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+
+                <div>
+                    <label for="phone">PHONE :</label>
+                    <input id="phone" name="phone" type="number" required>
+                </div>
+
+                <div>
+                    <label for="age">AGE :</label>
+                    <input id="age" name="age" type="number">
+                </div>
+
+                <div>
+                    <label for="gender">GENDER :</label>
+                    <input id="male" name="gender" type="radio" required>
+                    <label>MALE</label>
+                    <input id="female" name="gender" type="radio" required>
+                    <label>FEMALE</label>
+                </div>
+
+                <div>
+                    <label for="password">ENTER PASSWORD : </label>
+                    <input id="password" name="password" type="password" required>
+                </div>
+
+                <div>
+                    <label for="confirmPassword">CONFIRM PASSWORD : </label>
+                    <input id="confirmPassword" name="confirmPassword" type="password" required>
+                </div>
+                
+                <input id="submit" type="submit" required>
             </form>
         </main>
         <footer class="footer"><h3>AN APPLICATION BY <a href="https://www.linkedin.com/in/vivek-thakur-a41a22323/" target="_blank">VIVEK THAKUR</a></h3></footer>

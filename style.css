@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: 'Josefin';
+    src: url("Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -14,14 +20,17 @@
 h1{
     align-self: flex-start;
     margin-top: 0.75em;
+    font-family: 'Josefin';
 }
 h2{
     text-align: center;
-    
+    font-size: 30px;
+    font-family: 'Josefin';
 }
 h3{
     align-self: flex-end;
     margin-bottom: 1.5em;
+    font-family: 'Josefin';
 }
 .main{
     display: flex;
@@ -32,26 +41,45 @@ a{
     text-decoration: none;
 }
 form{
-    border: 3px black solid;
+    border: 3px lightblue solid;
+    border-radius: 30px;
+    background-color: lightblue;
     padding: 1em;
     display: flex;
     flex-direction: column;
-    height: 25em;
+    height: 30em;
+    width: 30em;
     justify-content: space-evenly;
 }
 label{
     text-align: left;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    font-family: 'Josefin';
 }
 input{
-    text-align: center;
+    text-align: left;
+    padding-left: 0.5em;
+    height: 2em;
+    width: 15em;
+    border: 2px solid white;
+    border-radius: 20px;
 }
-input:required{
-    border: 2px black solid;
+#male,#female{
+    width: 2em;
+    height: 1em;
 }
 #submit{
-    padding: 0.5em;
+    padding: 0.1em;
+    border-radius: 15px;
+    border: 2px purple solid;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
     width: 10em;
+    font-size: large;
     align-self: center;
+    text-align: center;
+    height: 3em;
+    font-family: 'Josefin';
 }

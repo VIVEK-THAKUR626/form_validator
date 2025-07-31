@@ -37,6 +37,11 @@ h3{
     align-items: center;
     height: 80vh;
 }
+.formElements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 a{
     text-decoration: none;
 }
@@ -65,6 +70,9 @@ input{
     border: 2px solid white;
     border-radius: 20px;
 }
+input:focus{
+    outline: none;
+}
 #male,#female{
     width: 2em;
     height: 1em;
@@ -82,4 +90,8 @@ input{
     text-align: center;
     height: 3em;
     font-family: 'Josefin';
+}
+button{
+    border: none;
+    background-color: lightblue;
 }

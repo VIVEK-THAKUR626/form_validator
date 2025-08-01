@@ -2,7 +2,8 @@ const toggle1 = document.getElementById("toggle1");
 const toggle2 = document.getElementById("toggle2");
 const submit = document.getElementById("submit");
 
-const inputs = document.querySelectorAll("input");
+const inputs = document.querySelectorAll("input[type='text'], input[type='email'], input[type='number'], input[type='password']");
+const genderRadios = document.querySelectorAll("input[name='gender']");
 
 const enterPassword = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
@@ -49,10 +50,11 @@ confirmPassword.addEventListener("input",(e)=>{
 
 submit.addEventListener("click",(event)=>{
     event.preventDefault();
-    const allFilled = Array.from(inputs).every((input) => input.value.trim === "" )
-    if(allFilled){
+    const hasEmptyFilled = Array.from(inputs).some((input) => input.value.trim() === "" );
+    const genderSelected = Array.from(genderRadios).some((radio) => radio.checked);
+    if(!hasEmptyFilled && genderSelected){
         window.location.href = 'form_submitted.html';
     }else{
-        alert("Fill the complete form")
+        alert("Fill the complete form");
     }
 })

@@ -1,5 +1,7 @@
 const toggle1 = document.getElementById("toggle1");
 const toggle2 = document.getElementById("toggle2");
+const submit = document.getElementById("submit");
+
 const enterPassword = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
 
@@ -33,10 +35,17 @@ confirmPassword.addEventListener("input",(e)=>{
     if(enterPassword.value != ""){
         if(e.currentTarget.value === enterPassword.value){
         e.currentTarget.style.border = "4px green solid";
+        e.currentTarget.style.backgroundColor = "lightgreen";
     }else{
         e.currentTarget.style.border = "none";
+        e.currentTarget.style.backgroundColor = "white";
     }
   }else{
     alert("Enter a password");
   }
+})
+
+submit.addEventListener("click",(event)=>{
+    event.preventDefault();
+    window.location.href = 'form_submitted.html';
 })

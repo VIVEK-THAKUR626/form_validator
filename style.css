@@ -13,6 +13,20 @@
     flex-direction: column;
     align-items: center;
 }
+.container2{
+    display: flex;
+    justify-content: space-around;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2em;
+    margin-top: 5em;
+}
 .header,.footer{
     height: 10vh;
     display: flex;
@@ -48,6 +62,8 @@ h3{
 }
 a{
     text-decoration: none;
+    color: blue;
+    font-family: 'Josefin';
 }
 form{
     border: 3px lightblue solid;
@@ -110,6 +126,10 @@ input:focus{
     height: 3em;
     font-family: 'Josefin';
     transition: all ease 0.4s;
+}
+#goBack{
+    margin-top: 1em;
+    font-size: larger;
 }
 #submit:hover{
     box-shadow: 8px 8px 8px rgba(0,0,0,0.4);

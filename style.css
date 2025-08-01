@@ -17,6 +17,10 @@
     height: 10vh;
     display: flex;
 }
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
 h1{
     align-self: flex-start;
     margin-top: 0.75em;
@@ -90,6 +94,28 @@ input:focus{
     text-align: center;
     height: 3em;
     font-family: 'Josefin';
+    transition: all ease 0.4s;
+}
+#reset{
+     padding: 0.1em;
+    border-radius: 15px;
+    border: 2px purple solid;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    width: 10em;
+    font-size: large;
+    align-self: center;
+    text-align: center;
+    height: 3em;
+    font-family: 'Josefin';
+    transition: all ease 0.4s;
+}
+#submit:hover{
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
+}
+#reset:hover{
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
 }
 button{
     border: none;

@@ -2,6 +2,8 @@ const toggle1 = document.getElementById("toggle1");
 const toggle2 = document.getElementById("toggle2");
 const submit = document.getElementById("submit");
 
+const inputs = document.querySelectorAll("input");
+
 const enterPassword = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
 
@@ -47,5 +49,10 @@ confirmPassword.addEventListener("input",(e)=>{
 
 submit.addEventListener("click",(event)=>{
     event.preventDefault();
-    window.location.href = 'form_submitted.html';
+    const allFilled = Array.from(inputs).every((input) => input.value.trim === "" )
+    if(allFilled){
+        window.location.href = 'form_submitted.html';
+    }else{
+        alert("Fill the complete form")
+    }
 })
